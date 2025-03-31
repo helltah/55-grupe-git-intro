@@ -3,7 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    
+    "biggestnumber": "node --watch ./task/biggest-number.js",
+    "digitcount": "node --watch ./task/digit-count.js",
+    "intervalcount": "node --watch ./task/interval-count-nd.js",
+    "stringreverse": "node --watch ./task/string-reverse-nd.js",
+    "intervalsum.js": "node --watch ./task/interva-sum.js",
+    "nd": "node --watch ./js-nd/7-nd1.js",
+    "multiply": "node --watch ./task/multiply.js",
+    "textsize": "node --watch ./task/text-size.js",
+    "adult": "node --watch ./task/adult.js",
     "mokinys": "node --watch ./js-nd/7-mokinys.js",
     "array": "node --watch ./js-nd/6-array.js",
     "if": "node --watch ./js-nd/5-if.js",
