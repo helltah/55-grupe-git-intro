@@ -266,7 +266,7 @@ console.log(skaicius5(20));
 console.log(skaicius5(30));
 console.log(skaicius5(5));
 
-console.clear();
+
 /*9.Patikrinkite, ar skaicius yra didesnis arba lygus 100.Pvz: Patikrinkite, ar skaicius = 150 yra didesnis arba lygus 100.
 */ 
 
@@ -286,3 +286,38 @@ console.log(biggerNumber(100));
 console.log(biggerNumber(150));
 console.log(biggerNumber(91));
 console.log(biggerNumber(100));
+
+
+
+// Uzduotys su funkcijomis
+
+/*1.Sukurkite funkcija, skirta patikrinkiti, ar skaicius yra teigiamas.
+*/
+
+function positiveNumber(number) {
+    if (number >= 0) {
+        return `${number}, yra teigiamas skaicius.`
+    }
+    if (number <= 0) {
+        return `${number}, yra neigiamas skaicius.`
+    }
+}
+console.log(positiveNumber(0));
+console.log(positiveNumber(1));
+console.log(positiveNumber(-1));
+console.log(positiveNumber(-0.1));
+console.log(positiveNumber(0.1));
+
+/*2. Sukurkite funkcija skaiciaus kvadratui apskaiciuoti.
+*/
+
+function skaiciausKvadratas(skaicius9) {
+    return skaicius9 * skaicius9    
+}
+console.log(skaiciausKvadratas(5))
+console.log(skaiciausKvadratas(-5))
+console.log(skaiciausKvadratas(0.5))
+console.log(skaiciausKvadratas(3.12))
+console.log(skaiciausKvadratas(5))
+
+/*3. Sukurkite funkcija, kuri paima du skaicius ir isveda i console didesniji.

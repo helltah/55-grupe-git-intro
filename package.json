@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "letterselect": "node --watch ./task/select-letter.js",
     "biggestnumber": "node --watch ./task/biggest-number.js",
     "digitcount": "node --watch ./task/digit-count.js",
     "intervalcount": "node --watch ./task/interval-count-nd.js",
