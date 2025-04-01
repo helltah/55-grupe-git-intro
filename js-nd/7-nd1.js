@@ -321,3 +321,4 @@ console.log(skaiciausKvadratas(3.12))
 console.log(skaiciausKvadratas(5))
 
 /*3. Sukurkite funkcija, kuri paima du skaicius ir isveda i console didesniji.
+*/
