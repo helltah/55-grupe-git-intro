@@ -322,3 +322,155 @@ console.log(skaiciausKvadratas(5))
 
 /*3. Sukurkite funkcija, kuri paima du skaicius ir isveda i console didesniji.
 */
+
+function didesnisSkaicius (skaicius1, skaicius2) {
+ if (skaicius1 > skaicius2) {
+    return `${skaicius1} yra didesnis uz ${skaicius2}`
+ }
+ if (skaicius2 > skaicius1) {
+    return `${skaicius2} yra didesnis uz ${skaicius1}`
+ }
+}
+console.log(didesnisSkaicius(1, 5));
+console.log(didesnisSkaicius(10, 5));
+console.log(didesnisSkaicius(1, 5));
+
+/*4. Sukurkite funkcija, kuri patikrintu ar skaicius yra lyginis.
+*/
+
+function lyginisSkaicius(number){
+    if (number % 2 == 0  ){
+        return `${number} yra lyginis skaicius`
+    }
+    if (number % 2)  {
+        return `${number} yra nelyginis skaicius.`
+    }
+}
+console.log(lyginisSkaicius(4));
+console.log(lyginisSkaicius(5));
+console.log(lyginisSkaicius(10));
+console.log(lyginisSkaicius(15));
+console.log(lyginisSkaicius(22));
+console.log(lyginisSkaicius(465563));
+
+console.clear();
+/*5.   Sukurkite funkcija patikrintu ar eiluteje yra zodis 'JavaScript'.
+*/
+//v1
+let sakinys ='yra "Javascript".'    
+
+if (sakinys.includes("Javascript")) {
+console.log('yra')
+}
+//v2
+function findWord(sakinys1) {
+    if (sakinys1.includes("Javascript")) {
+        return 'sakinyje yra zodis "Javascript".'
+    }
+    else
+    {
+        return 'sakinyje nera zodzio "Javascript".'
+    }
+}
+console.log(findWord('yra "Javascript".'));
+console.log(findWord('yra zodis "labas".'));
+
+
+
+/*6. Sukurkite funkciją, kuri į console išvestų priešingą reikšmę (jei skaičius teigiamas,
+išvestų neigiamą, jei yra gaunamas žodis tai žodį turi parašyti atvirkčiai. Apsibrėžkite
+kokio ilgio žodis turi būti gaunamas! ar 4, ar 5 ar kiek raidžių! imkite vieną
+variantą kolkas)
+*/
+
+
+/*7. Sukurkite funkciją, kuri apskaičiuotų stačiakampio plotą.
+a. Padaryti su sąrašo (array) tipo kintamuoju
+b. Padaryti su keliais skaičių tipo kintamaisiais
+*/
+
+function rectangle(plotisIlgis) {
+
+    return plotisIlgis[0] * plotisIlgis[1]
+}
+let rectangleIsmeai = [5, 5]
+console.log(rectangle(rectangleIsmeai))
+
+
+/*8.  Sukurkite funkciją, kuri tikrina, ar skaičius dalijasi iš 3.
+*/
+
+function divides3(skaicius) {
+ if (skaicius % 3 == 0) {
+    return 'Dalinasi is 3'
+ }
+ else
+ {
+    return 'Nedalinasi is 3'
+ }
+}
+console.log(divides3(2));
+console.log(divides3(3));
+console.log(divides3(3));
+console.log(divides3(5));
+console.log(divides3(4));
+
+/*9. Sukurkite funkciją, kuri tikrina, ar teksto tipo kintamasis prasideda raide 'a'.
+*/
+
+function firstLetter(start){
+    if (start.startsWith('a')) {
+        return `Zodis ${start} pradedasi is 'a'.`
+    }
+    else
+    {
+        return 'a nera'
+    }
+}
+console.log(firstLetter('ananasas'));
+console.log(firstLetter('bananas'));
+console.log(firstLetter('gananas'));
+
+/*10Sukurkite funkciją trijų skaičių vidurkiui rasti.
+*/
+
+function average(skaicius, skaicius1, skaicius2) {
+return (skaicius + skaicius1 + skaicius2) / 3  
+}
+console.log(average(5, 5, 5));
+console.log(average(5, 5, 8));
+console.log(average(5, 15, 85));
+console.log(average(5, 5, 5));
+console.log(average(5, 5, 5)); 
+
+/*11. Sukurkite funkciją, grąžinančią teksto tipo kintamojo ilgį
+*/
+function wordReturn(zodis) {
+    return (zodis.length)
+}
+console.log(wordReturn('labas'));
+
+/*12. Sukurkite funkciją dviem eilutėms sujungti.
+*/
+function onesentence(string1, string2) {
+    return (string1 + string2)
+
+}
+console.log(onesentence('labas ' ,'rytas'));
+
+
+/*13. . Sukurkite funkciją, kuri tikrina, ar skaičius yra tarp dviejų reikšmių (imtinai)
+*/
+ 
+function between(min, du, max ){
+if (du > min && du < max) {
+    return `skaicius ${du} yra tarp ${min} ir ${max} `
+}  
+else
+{
+    return `nera tarp ${min} ir ${max}.`
+}
+}
+console.log(between(1, 5, 10))
+console.log(between(1, 10, 10))
+console.log(between(1, 15, 10))
