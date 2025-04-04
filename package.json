@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "fornd": "node --watch ./js-nd/8-forCiklai-nd.js",
     "divide": "node --watch ./task/divide-function-nd.js",
     "letterselect": "node --watch ./task/select-letter.js",
     "biggestnumber": "node --watch ./task/biggest-number.js",
