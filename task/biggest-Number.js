@@ -43,4 +43,3 @@ console.log(biggestNumber([-Infinity, -2, -3]));
 console.log(biggestNumber([-1, -2, Infinity]));
 console.log(biggestNumber([-1, Infinity, -3]));
 
-

@@ -113,3 +113,124 @@ const e =  "Hello World!"
 for (let i = 0; i <= 5; i++ ){
     console.log(e)
 }
+
+/*
+Sunkesnės užduotys: 
+*/
+console.log('\nnaujaspratymas')
+/*1. Sukurkite for ciklą, kuris spausdina skaičius nuo 1 iki 100, tačiau kiekvieną skaičių, kuris 
+dalijasi iš 4, reikia pakeisti žodžiu „Fizz“. 
+*/
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 4 === 0) {
+        console.log('Fizz');
+    } else {
+        console.log(i);
+    }
+}
+
+console.log('\nnaujaspratymas')
+//2.Spausdinkite skaičius nuo 1 iki 100, bet skaičius, kurie dalijasi iš 3, pakeiskite "Fizz", 
+//skaičius, kurie dalijasi iš 5, - "Buzz", o skaičius, kurie dalijasi iš abiejų, - "FizzBuzz". 
+
+for ( i = 1; i <= 100; i++){
+if(i % 3 == 0)
+    {
+ console.log('Fizz'); 
+} 
+if(i % 5 == 0)
+    {
+ console.log('Buzz'); 
+} 
+if(i % 3 == 0 && i % 5 == 0)
+    {
+ console.log('FizzBuzz'); 
+}
+if (i % 3 != 0 && i % 5 != 0){
+    console.log(i)
+} 
+}
+ 
+console.log('\nnaujaspratymas')
+
+//3.Spausdinkite pirmuosius 10 skaičių Fibonačio sekoje.
+// Kiekvienas šios sekos skaičius lygus dviejų prieš jį einančių skaičių sumai!.
+// 2 kintamieji
+let p = 0
+let p1 =1, siekantisSkaicius
+
+ for (i = 1; i<=10; i++){
+    console.log(p)
+ 
+siekantisSkaicius = p + p1
+p = p1
+p1 = siekantisSkaicius
+ }
+
+ console.log('\nnaujaspratymas')
+
+ //4.Spausdinkite skaičius nuo 1 iki 20 ir prie kiekvieno lyginio skaičiaus spausdinkite 
+ // "Even", o prie kiekvieno nelyginio - "Odd".
+ 
+ for ( i = 0; i <= 20; i++){
+  if (i % 2 == 0){
+    console.log('Even')
+  }
+  else
+  {
+    console.log('Odd')
+  }
+ }
+
+ //5. Spausdinti bet kurio pasirinkto skaičiaus daugybos lentelę.
+
+ console.log('\nnaujaspratymas')
+
+const sk = 7
+ for (i = 0; i <= 10 ; i++) {
+ console.log(7 * i)
+ }
+
+ console.log('\nnaujaspratymas')
+
+ //6. Sukurkite for ciklą, kuris spausdina skaičius nuo 1 iki 30, bet tik tuos, kurie
+ //  dalijasi iš 2 arba 3.
+
+ for ( i = 1; i <= 30; i++) {
+  if (i % 2 == 0 && i % 3 == 0){
+    console.log (i)
+  }
+ }
+
+ console.log('\nnaujaspratymas')
+
+ //7. Sukurkite for ciklą, kad patikrintumėte, ar skaičius yra pirminis, ir išspausdintumėte 
+//pranešimą
+
+let skaicius = 5
+for (let i = 0; i <= skaicius; i++){
+  if (skaicius % i == 0){
+    console.log(i)
+  }
+}
+
+console.log('\nnaujaspratymas')
+
+//8.Spausdinkite pirmuosius 10 pirminių skaičių, naudodami for ciklą ir if sąlygas.
+
+let skaicius1 = 7
+for (let i = 0; i <= 10; i++){
+  if (skaicius1 % i == 0){
+    console.log(i)
+  }
+}
+
+console.log('\nnaujaspratymas')
+
+//9. Išspausdinkite visų lyginių skaičių nuo 1 iki 100 sumą.
+for (i = 1; i <= 100; i++){
+    if (i % 2 == 0) {
+        console.log(i)
+    }
+}
